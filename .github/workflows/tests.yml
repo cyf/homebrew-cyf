@@ -1,0 +1,31 @@
+name: brew test-bot
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test-bot:
+    runs-on: macos-latest
+    steps:
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - run: brew test-bot --only-cleanup-before
+
+      - run: brew test-bot --only-setup
+
+      - run: brew test-bot --only-tap-syntax
+
+      - run: brew test-bot --only-formulae
+        if: github.event_name == 'pull_request'
+
+      - name: Upload bottles as artifact
+        if: always() && github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: bottles_macos
+          path: '*.bottle.*'

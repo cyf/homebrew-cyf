@@ -11,7 +11,7 @@ cask "faforever" do
   # https://docs.brew.sh/Cask-Cookbook#stanza-url
   # https://docs.brew.sh/Cask-Cookbook#when-url-and-homepage-domains-differ-add-verified
   url "https://github.com/cyf/faforever/releases/download/v#{version}/FaForever_#{version}_#{arch}.dmg",
-      verified: "https://github.com/cyf/faforever/"
+      verified: "github.com/cyf/faforever/"
   name "FaForever"
   desc "FaForever."
   homepage "https://chenyifaer.com/faforever"
@@ -21,9 +21,9 @@ cask "faforever" do
     url :url
     strategy :git do |tags|
       tags.map { |tag|
-        match = tag&.match(/^v?(\d+(?:\.\d+)+)(\+\d+)?$/i)
+        match = tag&.match(/^v?(\d+(?:\.\d+)+(\+\d+)?)$/i)
         next if match.blank?
-        tag
+        match[1]
       }.compact
     end
   end

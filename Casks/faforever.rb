@@ -13,18 +13,19 @@ cask "faforever" do
   url "https://github.com/cyf/faforever/releases/download/v#{version}/FaForever_#{version}_#{arch}.dmg",
       verified: "github.com/cyf/faforever/"
   name "FaForever"
-  desc "FaForever."
+  desc "Always with you"
   homepage "https://chenyifaer.com/faforever"
 
   # Documentation: https://docs.brew.sh/Brew-Livecheck
   livecheck do
     url :url
     strategy :git do |tags|
-      tags.map { |tag|
+      tags.filter_map do |tag|
         match = tag&.match(/^v?(\d+(?:\.\d+)+(\+\d+)?)$/i)
         next if match.blank?
+
         match[1]
-      }.compact
+      end
     end
   end
 

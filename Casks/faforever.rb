@@ -4,7 +4,7 @@
 cask "faforever" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.0.0+21"
+  version "0.0.0+22"
   # https://docs.brew.sh/Cask-Cookbook#stanza-sha256
   sha256 :no_check
 

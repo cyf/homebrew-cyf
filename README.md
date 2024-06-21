@@ -1,19 +1,17 @@
-# homebrew-faforever
+# homebrew-cyf
 
-> FaForever, always with you.
-
-[![brew test-bot](https://github.com/cyf/homebrew-faforever/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/cyf/homebrew-faforever/actions/workflows/tests.yml)
+[![brew test-bot](https://github.com/cyf/homebrew-cyf/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/cyf/homebrew-cyf/actions/workflows/tests.yml)
 
 ## Install
 
 ```shell
-brew install cyf/faforever/faforever
+brew install cyf/cyf/faforever
 ```
 
 Or
 
 ```shell
-brew tap cyf/faforever
+brew tap cyf/cyf
 
 brew install faforever
 ```
@@ -22,7 +20,7 @@ Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`
 
 ```ruby
 # Brewfile
-tap "cyf/faforever"
+tap "cyf/cyf"
 brew "faforever"
 ```
 

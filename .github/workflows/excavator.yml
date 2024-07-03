@@ -1,0 +1,31 @@
+name: Excavator
+
+on:
+  workflow_dispatch:
+  schedule:
+    # run every 4 hours
+    - cron: '20 */4 * * *'
+
+jobs:
+  excavate:
+    name: Excavate
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update Homebrew cask
+        uses: macauley/action-homebrew-bump-cask@v1
+        with:
+          # Required, custom GitHub access token with only the 'public_repo' scope enabled
+          token: ${{secrets.BREW_CYF_TOKEN}}
+          # Optional, will create tap repo fork in organization
+          # org: ORG
+          # Bump all outdated casks in this tap
+          tap: cyf/homebrew-cyf
+          # Bump only these casks if outdated
+          cask: faforever
+          # Optional, if don't want to check for already open PRs
+          force: false # true
+          # Need to set this input if want to use `brew livecheck`
+          livecheck: true
+          dryrun: false

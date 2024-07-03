@@ -6,7 +6,8 @@ cask "faforever" do
 
   version "0.0.1+25"
   # https://docs.brew.sh/Cask-Cookbook#stanza-sha256
-  sha256 :no_check
+  sha256 arm:   "34dd1e85a44b425db892d4a2f06e5e36bd670bc9e1181646d6ae9fb614002421",
+         intel: "2ac1079a14d803d938232652bb69591ba21282316bef2ba54f6ad942c968b1c5"
 
   # https://docs.brew.sh/Cask-Cookbook#stanza-url
   # https://docs.brew.sh/Cask-Cookbook#when-url-and-homepage-domains-differ-add-verified

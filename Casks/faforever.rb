@@ -1,9 +1,9 @@
 cask "faforever" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.0.1+25"
-  sha256 arm:   "34dd1e85a44b425db892d4a2f06e5e36bd670bc9e1181646d6ae9fb614002421",
-         intel: "2ac1079a14d803d938232652bb69591ba21282316bef2ba54f6ad942c968b1c5"
+  version "0.0.1+26"
+  sha256 arm:   "061f89598a088d9af32969f00985899185860ceaefb378bb34bf001f5b22441b",
+         intel: "6cffaba3b1a28fb1d5012268e6f8c1a4c39a38c483f2206ca435e6ecb5fab30a"
 
   url "https://github.com/cyf/faforever/releases/download/v#{version}/FaForever_#{version}_#{arch}.dmg",
       verified: "github.com/cyf/faforever/"

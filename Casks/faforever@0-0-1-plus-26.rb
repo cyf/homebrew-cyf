@@ -1,4 +1,4 @@
-cask "faforever" do
+cask "faforever@0-0-1-plus-26" do
   arch arm: "aarch64", intel: "x64"
 
   on_arm do

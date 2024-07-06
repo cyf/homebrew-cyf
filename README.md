@@ -1,7 +1,8 @@
 # homebrew-cyf
 
-[![brew test-bot](https://github.com/cyf/homebrew-cyf/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/cyf/homebrew-cyf/actions/workflows/tests.yml)
-[![excavator](https://github.com/cyf/homebrew-cyf/actions/workflows/excavator.yml/badge.svg?branch=main)](https://github.com/cyf/homebrew-cyf/actions/workflows/excavator.yml)
+[![Test](https://github.com/cyf/homebrew-cyf/actions/workflows/test.yml/badge.svg)](https://github.com/cyf/homebrew-cyf/actions/workflows/test.yml)
+[![Excavator](https://github.com/cyf/homebrew-cyf/actions/workflows/excavator.yml/badge.svg)](https://github.com/cyf/homebrew-cyf/actions/workflows/excavator.yml)
+[![Add version](https://github.com/cyf/homebrew-cyf/actions/workflows/version.yml/badge.svg)](https://github.com/cyf/homebrew-cyf/actions/workflows/version.yml)
 
 ## Install
 

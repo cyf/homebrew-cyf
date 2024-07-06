@@ -1,4 +1,4 @@
-name: brew test-bot
+name: Test
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   pull_request:
 
 jobs:
-  test-bot:
+  test:
     runs-on: macos-latest
     steps:
       - name: Set up Homebrew

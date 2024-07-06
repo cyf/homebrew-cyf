@@ -10,7 +10,6 @@ on:
 
 jobs:
   version:
-    name: Version
     runs-on: macos-latest
 
     permissions:

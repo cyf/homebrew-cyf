@@ -7,8 +7,7 @@ on:
     - cron: '20 */4 * * *'
 
 jobs:
-  excavate:
-    name: Excavate
+  excavator:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4

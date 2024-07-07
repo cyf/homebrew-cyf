@@ -32,10 +32,10 @@ jobs:
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: ${{github.ref_name}}"
+          commit_message: "chore: ${{ github.event.inputs.version }}"
           commit_options: '--no-verify --signoff'
           commit_user_name: kjxbyz
           commit_user_email: kjxbyz888@outlook.com
           commit_author: kjxbyz <kjxbyz888@outlook.com>
-          add_options: '-u'
+          add_options: '-A'
           push_options: '--force'

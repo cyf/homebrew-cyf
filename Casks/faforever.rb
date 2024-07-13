@@ -2,12 +2,12 @@ cask "faforever" do
   arch arm: "aarch64", intel: "x64"
 
   on_arm do
-    version "0.0.1+26"
-    sha256 "5773d39be66cf5fea8fbedf43e76eb445b2fc4f3cc588d5e42675872bd08cee9" # aarch64
+    version "0.0.1+27"
+    sha256 "e600cb4304a7b2cbd660fc3f12d304941f23147f6290052ce25e38523604fd81" # aarch64
   end
   on_intel do
-    version "0.0.1+26"
-    sha256 "6ab2c0a26fd3e1a3403ff06b3f2d208314c549cf07daa0db90d19f0f5a96af96" # x64
+    version "0.0.1+27"
+    sha256 "53b866d5f8dd6c83d573ecc532110184fe4662c22f7c47ed6c70c2be2ca4583d" # x64
   end
 
   url "https://github.com/cyf/faforever/releases/download/v#{version}/FaForever_#{version}_#{arch}.dmg",

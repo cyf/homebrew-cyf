@@ -1,17 +1,9 @@
 cask "faforever" do
-  arch arm: "aarch64", intel: "x64"
+  version "1.0.0+12"
+  sha256 "9397442c1dcd01e7e6454e0813ff1af9c64f69e983f3c6b3f9b9b55088cc5c32"
 
-  on_arm do
-    version "0.0.1+27"
-    sha256 "e600cb4304a7b2cbd660fc3f12d304941f23147f6290052ce25e38523604fd81" # aarch64
-  end
-  on_intel do
-    version "0.0.1+27"
-    sha256 "53b866d5f8dd6c83d573ecc532110184fe4662c22f7c47ed6c70c2be2ca4583d" # x64
-  end
-
-  url "https://github.com/cyf/faforever/releases/download/v#{version}/FaForever_#{version}_#{arch}.dmg",
-      verified: "github.com/cyf/faforever/"
+  url "https://github.com/cyf/faforever-flutter/releases/download/v#{version}/FaForever_#{version}_macos_universal.dmg",
+      verified: "github.com/cyf/faforever-flutter/"
   name "FaForever"
   desc "Third-party music player that replaces Synology DS Audio client"
   homepage "https://chenyifaer.com/faforever"
@@ -34,9 +26,9 @@ cask "faforever" do
 
   zap trash: [
     "~/Library/Application Support/FaForever",
-    "~/Library/Caches/com.chenyifaer.faforever",
+    "~/Library/Caches/com.chenyifaer.faforever.mac",
     "~/Library/Caches/FaForever",
-    "~/Library/Preferences/com.chenyifaer.faforever.plist",
-    "~/Library/Saved Application State/com.chenyifaer.faforever.savedState",
+    "~/Library/Preferences/com.chenyifaer.faforever.mac.plist",
+    "~/Library/Saved Application State/com.chenyifaer.faforever.mac.savedState",
   ]
 end

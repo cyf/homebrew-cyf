@@ -2,8 +2,8 @@ cask "faforever" do
   version "1.0.0+12"
   sha256 "9397442c1dcd01e7e6454e0813ff1af9c64f69e983f3c6b3f9b9b55088cc5c32"
 
-  url "https://github.com/cyf/faforever-flutter/releases/download/v#{version}/FaForever_#{version}_macos_universal.dmg",
-      verified: "github.com/cyf/faforever-flutter/"
+  url "https://github.com/cyf/faforever/releases/download/v#{version}/FaForever_#{version}_macos_universal.dmg",
+      verified: "github.com/cyf/faforever/"
   name "FaForever"
   desc "Third-party music player that replaces Synology DS Audio client"
   homepage "https://chenyifaer.com/faforever"

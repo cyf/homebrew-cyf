@@ -13,7 +13,7 @@ end
 
 puts "Releasing FaForever on Homebrew: v#{version}"
 
-url = "https://api.github.com/repos/cyf/faforever-flutter/releases/tags/v#{version}"
+url = "https://api.github.com/repos/cyf/faforever/releases/tags/v#{version}"
 response = Net::HTTP.get_response(URI(url))
 !response.is_a?(Net::HTTPSuccess) && abort("Did not find release: v#{version} [status: #{response.code}]")
 

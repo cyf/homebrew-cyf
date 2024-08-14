@@ -1,6 +1,6 @@
 cask "faforever" do
-  version "1.0.0+40"
-  sha256 "f7cca8b7e798f53e1de36ed94b7fb9b246cf5ad48f94214a24f012179be90c6b"
+  version "1.0.0+44"
+  sha256 "98b9f128189dad54adb7e3aa24e3d7e3861400668b533f048c7e8b9146aa73d9"
 
   url "https://github.com/cyf/faforever/releases/download/v#{version}/FaForever_#{version}_macos_universal.dmg",
       verified: "github.com/cyf/faforever/"

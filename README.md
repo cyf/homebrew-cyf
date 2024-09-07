@@ -26,22 +26,6 @@ tap "cyf/cyf"
 brew "faforever"
 ```
 
-## Install a specific version
-
-If you want to install a specific release, you can include the version in the command. You can also view the list of releases [here](https://github.com/cyf/faforever/releases).
-
-```shell
-brew install cyf/cyf/faforever@0-0-1-plus-26
-```
-
-Or
-
-```bash
-brew tap cyf/cyf
-
-brew install faforever@0-0-1-plus-26
-```
-
 ## Debug
 
 [Adding Software to Homebrew](https://docs.brew.sh/Adding-Software-to-Homebrew)
